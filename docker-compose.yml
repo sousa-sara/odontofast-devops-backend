@@ -1,7 +1,9 @@
+version: '3' 
 services:
   backend:
     build:
-      context: ./backend
+      context: ./docker  
+      dockerfile: Dockerfile  
     ports:
       - "8080:8080"
     container_name: odontofast_backend
